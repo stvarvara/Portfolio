@@ -1,0 +1,2191 @@
+/*for all the pages*/
+/*reset*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+    font-family: "Rubik";
+}
+
+ul,
+ol,
+li {
+	list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+html,
+body {
+	height: 100%;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-image: url(../images/arbres.svg);
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position: bottom right;
+}
+.btn{
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.btn:hover{
+    background: #fff;
+    box-shadow: 0px 2px 20px 10px #587158 ;
+    color: #E49F82;
+}
+/*header*/
+header{
+    width: 100%;
+    height: 145px;
+    background-color: #587158;
+    display: flex;
+    flex-direction: column;
+	padding: 20px 0;
+    position: absolute;
+}
+#vheaderblock{
+	width:90%;
+    margin:0 auto;
+}
+#vlogo{
+	text-align: center;
+}
+#vlogo img{
+	height: 60px;
+}
+#vmenu{
+	display: flex;
+	justify-content: space-between;
+
+}
+#vmainmenu{
+	align-self: end;
+    width: 970px;
+}
+#vmainmenu ul {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: white;
+}
+.vcont{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#vcontact{
+	display: flex;
+	flex-direction: column;
+	height: 45px;
+	justify-content: space-between;
+	width: 165px;
+}
+.vcont img{
+    width: 15px;
+    height: 15px;
+}
+#vhrmenu{
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    border: 2px solid #FFFFFF;
+    display: none;
+    
+
+}
+#vlogomob{
+    display: none;
+
+}
+.header__burger-btn {
+    display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.header__burger-btn span {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+.header__burger-btn span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+
+.header.open .header__burger-btn span:nth-child(1) {
+    transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+    transform: translateY(0) rotate(-45deg);
+}
+
+/*footer*/
+footer{
+    background-color: #587158;
+    width: 100%;
+    height: 75px;
+	display: flex;
+	align-items: center;
+}
+#vfooterblock{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	color: white;
+}
+footer img{
+    width: 134px;
+    height: 28px;
+
+}
+footer nav ul li a{
+    font-size: 16px;
+    padding: 0 5px;
+}
+footer nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.vlineFooter{
+    border-right: 2px solid white;
+}
+#vcopy h3{
+    font-style: italic;
+font-weight: 400;
+font-size: 16px;
+}
+#vfootmobdiv{
+    display: none;
+}
+#vfootmobdiv h3{
+    font-weight: 700;
+font-size: 14px;
+}
+#vfootmobdiv img{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#vfootmobdiv{
+    text-align: center;
+    }
+
+
+
+/*main*/
+/*barbara*/
+
+#vbanner {
+    background-image: linear-gradient(182.33deg, rgba(0, 0, 0, 0) 43.51%, rgba(0, 0, 0, 0.75) 98.05%), url("../images/vbanner.jpg");
+    width: 100%;
+    height: 545px;
+    padding: 335px 0 0 75px;
+
+
+}
+#vbr p, #arbr p{
+    position: absolute;
+    width: 450px;
+    left: 75px;
+    top: 405px;
+    background: #E49F82;
+    font-style: italic;
+    font-size: 20px;
+    text-align: justify;
+    color: #FFFFFF;
+    padding: 45px 35px;
+    }
+#vbanner h1, #arbanner h1{
+    position: absolute;
+    width: 70%;
+    height: 50px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#vmaininf{
+	display: flex;
+}
+#vage{
+    position: absolute;
+    width: 140px;
+    height: 55px;
+    left: 550px;
+    top: 465px;
+
+}
+#vintens{
+    position: absolute; 
+    width: 190px;
+    height: 50px;
+    left: 800px;
+    top: 465px;
+}
+#vintens h3, #vage h3 {
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+    text-align: center;
+
+}
+#vintens img{
+    width: 120px;
+    height: 20px;
+    margin-left:35px;
+}
+#vinfgen h1{
+display: none;
+}
+#vparagraph{
+    display: flex;
+    justify-content: flex-end;
+    margin-right:60px;
+    margin-top: 28px;
+}
+#vdure{
+   
+    border-right: #DCD9AB 10px solid;
+    padding-right: 20px;
+    height: 175px;
+    position: relative;
+
+}
+#vmobdiv{
+    display: flex;
+    flex-direction: column;
+}
+#vdure h2, #vactprinc h2, #vactsec h3, #vactsec h2, #vinfgen h1{
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #587158;
+    margin-left: 25px;
+
+   
+}
+#viconinf h3{
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #587158;
+}
+.viconinfim{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 60px;
+}
+.vday{
+    display: flex;
+    margin: 25px 0 0 50px;
+}
+.vday h3{
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #587158;
+	margin: 0  0 0 18px;
+}
+.vday img{
+	width: 25px;
+	height: 25px;
+}
+
+#vactprinc{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+#vniv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+#vniv img{
+    width: 120px;
+    height: 20px;
+    margin: 24px 0 0 0;
+}
+#vactsec{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 40px;
+}
+#viconinf{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 0 60px;
+}
+#viconinf h3{
+    margin: 0px 0 0 20px;
+}
+
+#vday img{
+    width: 25px;
+    height: 25px;
+}
+.viconinf img, #vactsec img, #viconinf img{
+    width: 40px;
+    height: 40px;
+}
+.petithr{
+    
+    border: 5px solid  #DCD9AB;
+    width: 35px;
+    background-color:#DCD9AB;
+    z-index: -1;
+    position: absolute;
+    left: 10px ;
+    top: 15px;
+}
+#vac, #vniv, #vactsec{
+    position: relative;
+}
+.vmain{
+	width:90%;
+	margin:0 auto;
+	margin-bottom:75px;
+}
+#vavant, #vpresent{
+    position: relative;
+}
+#vavanblock p{
+   text-indent: 50px ;
+   font-style: italic;
+   font-weight: 400;
+   font-size: 18px;
+   text-align: justify;
+   color: #587158;
+   margin: 35px 0 55px 0;
+}
+.vtitre{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #587158;
+ }
+.viconav img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px ;
+    margin-left: 35px;
+ }
+ .viconav h2{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #587158;
+ }
+ #vavanblock{
+     width: 770px;
+ }
+ .vlonghr{
+	 width: 105%;
+ }
+ .vlonghr, #vlonghrprog, #vlonghrtarif {
+    border: 15px solid  #DCD9AB;  
+    background-color:#DCD9AB;
+    z-index: -1;
+    position: absolute;
+    left: -25px ;
+    top: 15px;
+}
+.viconav {
+    display: flex;
+    align-items: center;
+    margin: 0 0 35px 0;
+}
+.vphoto{
+    background-color: #587158;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin-top: 35px;  
+}   
+#vavanbigblock{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+} 
+.vphoto img{
+    width: 400px;
+    height: 250px;
+}
+.vhrmoy{
+    border: 2px solid  #DCD9AB;
+    width: 200px;
+    background-color:#DCD9AB;
+    position: absolute;
+    top: 290px;
+}
+.vphoto h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 25px;
+}
+.vphoto p{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 345px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+#vpresentbig > p, #vgalerie > p{
+    text-indent: 50px ;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    color: #587158;
+    margin-top: 25px;
+}
+#vprogrdet{
+    flex-wrap: wrap;
+}
+#vpresentbig{
+    margin-right: 30px;
+    margin-left: 30px;
+    height: 400px;
+}
+#vbigivl{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+#vincl{
+    background-color: #587158;
+    width: 600px;
+    height: 305px;
+    padding: 25px; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#vnonincl{
+    background-color: #DCD9AB;
+    width: 600px;
+    height: 305px; 
+    padding: 25px;
+    position: relative;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.vincic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#vincl .vincic h3{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+.vincic img{
+    margin-right: 10px;
+}
+#vnonincl .vincic h3{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #587158;
+}
+#vincl p{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+.vhrbl{
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    top: 75px;
+    width: 550px;
+}
+#vincltext{
+    margin: 50px;
+}
+.vspd{
+    display: none;
+}
+#vnonincl p{
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #587158;
+    margin-bottom: 25px;
+}
+#vprogrdet{
+    position: relative;
+    display: flex;
+    min-width: 0;
+    justify-content: space-between;
+}
+
+#vlonghrprog{
+    width: 860px;
+}
+#vprogbig{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 835px;
+    border-right: #DCD9AB 10px solid;
+    padding: 25px;
+}
+#vprogbig > p{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: justify;
+    color: #587158;
+    margin-bottom: 30px;
+}
+
+.vprogjour{
+    position: relative;
+    margin-bottom: 25px;
+}
+.vprogjour h2{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #587158;
+    margin-left: 20px;
+}
+.vprogjour p{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: justify;
+    color: #587158;
+    margin-left: 45px;
+}
+#vtarif{
+    margin-left: 50px;
+    position: relative;
+}
+#vtarif #vlonghrtarif{
+    width: 430px ;
+}
+#vjours p{
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #DCD9AB;
+    margin-left: 25px;
+    margin-right: 16px;
+}
+#vjours{
+    display: flex;
+    width: 400px;
+    margin-top: 30px;
+}
+.item{
+    width: 400px ;
+    height: 450px;
+    position: relative;
+}
+
+.item .item_prev::after,
+.item .item_next::after{
+    position: absolute;
+    color: rgb(255 255 255);
+    top: 110px;
+    font-size: 25px;
+}
+
+#vgalerie{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 0;
+}
+#vgaldiv{
+    display: flex;
+    flex-direction: column;
+
+}
+#vgalphot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 35px;
+}
+.vphotolight p{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #587158;
+    width: 345px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.vphotolight img{
+    width: 400px;
+    height: 250px;
+
+}
+.vphotolight h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #587158;
+    padding-left: 25px;
+}
+.vphotolight{
+    background-color: #DCD9AB;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin-top: 35px;
+}  
+.vphotolight .vhrmoy{
+    border: 2px solid white;
+}
+
+.vbrouge{
+    background-color: #E49F82 ;
+    width: 100%;
+    height: 50px ;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#vbuttass{
+    position: fixed;
+    bottom: 10%;
+    right: 0.5%;
+}
+
+
+/*************************************************/
+/*angelica*/
+#anbanner{
+    background-image: linear-gradient(182.33deg, rgba(0, 0, 0, 0) 43.51%, rgba(0, 0, 0, 0.75) 98.05%), url("../images/1-banner.jpg");
+    width: 100%;
+    height: 545px;
+    padding: 335px 0 0 75px;
+}
+#anbanner h1{
+    position: absolute;
+    width: 70%;
+    height: 50px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+#anpar p{
+    position: absolute;
+    width: 900px;
+    left: 90px;
+    top: 450px;
+    background: #E49F82;
+    font-style: italic;
+    font-size: 20px;
+    text-align: justify;
+    color: #FFFFFF;
+    padding: 40px 40px;
+    text-indent: 35px;
+    }
+#heberg{
+    position: relative;
+    margin-top: 100px;
+}
+#an3div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.anlistdanslist img{
+    height: 40px;
+    width: 40px;
+}
+.anhebdiv .vphotolight p{
+    margin-top: 30px;
+}
+#anlocal{
+    position: relative;
+}
+.anlisttitre{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.anlist, #anlistvert{
+    margin-top: 25px;
+    padding-left: 25px;
+    height: 275px;
+}
+.anlistdanslist{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.anlisttitre img{
+    margin-right: 10px;
+}
+.anlistdanslist img{
+    margin-right: 30px;
+}
+.anlisttitre h3{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.anlistdanslist h4{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #587158;
+}
+.anlist{
+    border-left: 10px solid #DCD9AB ;
+    width: 400px;
+}
+#anlistvert{
+    border-left: 10px solid #587158;;
+}
+#anlocdiv{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+#anlocdiv .vphoto{
+    width: 845px;
+    margin: 0;
+}
+#anlocdiv .vphoto img{
+    width: 100%;
+}
+#anlocdiv .vphoto p{
+    width: 785px;
+}
+#anlocdiv .vphoto h3{
+    margin-top: 10px;
+}
+#anlocdiv .vphoto .vhrmoy{
+    top: 300px;
+    border-width: 1px;
+}
+#anlocal{
+    margin-bottom: 25px;
+}
+#ansp{
+    font-weight: 400;
+}
+/*************************************************/
+/*************************************************************
+########################## JUSTINE ##########################
+*************************************************************/
+
+
+
+/* illustration d'en-tête */
+#j-main{
+    width: 90%;
+    margin: 0 auto;
+}
+#j-IllustrationBanniere
+{
+    background-image: linear-gradient(89.77deg, rgba(0, 0, 0, 0) 49.98%, rgba(0, 0, 0, 0.75) 99.8%), url("../images/guy-surfing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 35%;
+    height: 545px;
+}
+
+#j-TexteBanniere h1
+{
+    position: absolute;
+    right: 40px;
+    top: 220px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    }
+
+#j-TexteBanniere p
+{
+    position: absolute;
+    width: 428px;
+    right: 40px;
+    top: 265px;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+
+
+#j-RubriquesALaUne, #j-DecouvrirSK
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#j-RubriquesALaUne > p
+{
+    text-indent: 50px ;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    color: #587158;
+    margin-top: 25px;
+}
+
+/* Rubriques */
+.j-RubriqueIndivFoncee
+{
+    background-color: #587158;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.j-RubriqueIndivFoncee h3
+{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+
+.j-RubriqueIndivFoncee p
+{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 345px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.j-TripleBloc
+{
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 25px;
+}
+
+
+
+.j-RubriqueIndivClaire
+{
+    background-color: #DCD9AB;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
+}  
+
+.j-RubriqueIndivClaire h3
+{
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #587158;
+    padding-left: 25px;
+    padding-top: 15px;
+
+}
+
+.j-RubriqueIndivClaire p
+{
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #587158;
+    width: 345px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.j-RubriqueIndivClaire .vhrmoy
+{
+    border: 2px solid white;
+}
+
+#j-IllustrationSK > img, .j-RubriqueIndivFoncee > img, .j-RubriqueIndivClaire > img
+{
+    width: 400px;
+    height: 250px;
+}
+
+#j-IllustrationSK, #j-RubriqueDesc, #j-RubriqueAvis
+{
+    height: 400px;
+    width: 400px;
+    position: relative;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
+    color:#587158;
+}
+
+#jbutsav > a, #j-RubriqueAvis > p > a
+{
+    font-style: italic;
+    color:#DCD9AB;
+    text-decoration: underline;
+}
+
+/* Légende Facebook & Instagram, note Tripadvisor */
+#j-IllustrationSK > p, #j-NoteTripAdv
+{
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #587158;
+}
+
+#j-BlocEtoiles
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#j-BlocEtoilesNote
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#j-BlocTripAdv
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#j-RubriqueAvis > p 
+{
+    text-align: right;
+}
+
+#j-guillemetG1
+{
+    position: relative;
+    right: 20px;
+    top: 20px;
+}
+
+#j-guillemetD1
+{
+    position: relative;
+    left: 400px;
+    bottom: 40px;
+}
+
+#j-guillemetG2
+{
+    position: relative;
+    right: 20px;
+    top: 20px;
+}
+
+#j-guillemetD2
+{
+    position: relative;
+    left: 400px;
+    bottom: 40px;
+}
+#j-IllustrationSK > p{
+    display: flex;
+    align-items: center;
+}
+#j-IllustrationSK p a img{
+    margin: 0 5px;
+}
+
+/* Bouton catalogue */
+.bouton_catalogue
+{
+    background-color: #E49F82 ;
+    width: 1340px;
+    height: 50px ;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*Stéfan*/
+
+#Sbanner {
+    background-image: linear-gradient(182.33deg, rgba(0, 0, 0, 0) 43.51%, rgba(0, 0, 0, 0.75) 98.05%), url("../images/Montagne_PC.png");
+    width: 100%;
+    height: 545px;
+    padding: 335px 0 0 75px;
+}
+#Sbr p{
+    position: absolute;
+    width: 900px;
+    left: 75px;
+    top: 440px;
+    background: #E49F82;
+    font-style: italic;
+    font-size: 20px;
+    text-align: justify;
+    color: #FFFFFF;
+    padding: 45px 35px;
+}
+#Sbanner h1{
+    position: absolute;
+    width: 70%;
+    height: 50px;
+    font-weight: 800;
+    font-size: 40px;
+    text-align: justify;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+#Sdure{
+    border-right: #fff 10px solid;
+    padding-right: 20px;
+    height: 150px;
+    position: relative;
+}
+.Smain{
+	width:90%;
+	margin:0 auto;
+	margin-bottom:75px;
+}
+.Sbrouge{
+    background-color: #E49F82 ;
+    width: 1290px;
+    height: 50px ;
+    border-radius: 5px;
+    margin-left: 4.5%;
+    margin-bottom: 25px;
+    color: white;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#Sbuttass{
+    position: fixed;
+    bottom: 10%;
+    right: 0.5%;
+}
+
+.arBouton1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #587158;
+    background-color: #DCD9AB;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 15px 34px;
+    margin: auto;
+}
+.arBouton2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #587158;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 15px 34px;
+    margin: auto;
+}
+.arBlocImage1{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    width: 1268px;
+    height: 336px;
+}
+.arBlocImage2{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-self: center;
+    align-items: center;
+    width: 1268px;
+    height: 336px;
+}
+.arBlocTexte1 {
+    flex-wrap: nowrap;
+    justify-self: left;
+    width: 449px;
+    height: 336px;
+    background-color: #587158;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 26px;
+    margin: auto 0 auto auto;
+}
+
+.arBlocTexte1 > *:last-child,.arBlocTexte2 > *:last-child {
+    margin-bottom: 25px;
+}
+.arBlocTexte2 {
+    flex-wrap: nowrap;
+    justify-self: left;
+    width: 449px;
+    height: 336px;
+    background-color: #DCD9AB;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 26px;
+    margin: auto 0 auto auto;
+}
+.arSousTitreTexte1 {
+    width: 200px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 26px auto 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.arSousTitreTexte2 {
+    width: 200px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #587158;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 26px auto 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+.arSousTitreTrait1 {
+    width: 200px;
+    height: 3px;
+    background-color: #DCD9AB;
+}
+.arSousTitreTrait2 {
+    width: 200px;
+    height: 3px;
+    background-color: #fff;
+}
+.arSousTexte_PC1 {
+    width: 89%;
+    height: 110px;
+    margin: 0px 5.5%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    color: #FFFFFF;
+}
+.arSousTexte_PC2 {
+    width: 89%;
+    height: 110px;
+    margin: 0px 5.5%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    color: #587158;
+}
+.arSousTexte_mob1,.arSousTexte_mob2 {
+    display: none;
+}
+
+
+/*Armel*/
+
+.arLien {
+    pointer-events: none;
+}
+
+.arBouton {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #587158;
+    background-color: #DCD9AB;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 15px 34px;
+    margin: auto;
+}
+
+.arSousTexte_PC {
+    width: 89%;
+    height: 110px;
+    margin: 0px 5.5%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.arSousTexte_mob {
+    display: none;
+}
+
+.arSousTitreTexte {
+    width: 200px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 26px auto 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.arSousTitreTrait {
+    width: 200px;
+    height: 3px;
+    background-color: #DCD9AB;
+}
+
+.arSousTitre {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 81px;
+    gap: 24px;
+}
+
+.arBlocTexte {
+    flex-wrap: nowrap;
+    justify-self: left;
+    width: 449px;
+    height: 336px;
+    background-color: #587158;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 26px;
+    margin: auto 0 auto auto;
+  }
+
+.arBlocTexte > *:last-child {
+    margin-bottom: 25px;
+}
+
+.arBlocImage{
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    align-items: center;
+    width: 1268px;
+    height: 336px;
+}
+
+.arImage_PC {
+    flex-wrap: nowrap;
+}
+
+.arImage_mob {
+    display: none;
+}
+
+.arTitreTexte {
+    left: 25px;
+    top: -25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #587158;
+    text-decoration: none;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.arTitreTexte:before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    bottom: -15px;
+    width: 100%;
+    height: 30px;
+    background-color: #DCD9AB;
+    z-index: -1;
+}
+
+.arTitre {
+    width: 1340px;
+    height: 74px;   
+}
+
+.arArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 50px auto;
+
+}
+#arbr {
+    margin-bottom: 207px;
+}
+#arbanner {
+    background-image: linear-gradient(182.33deg, rgba(0, 0, 0, 0) 43.51%, rgba(0, 0, 0, 0.75) 98.05%), url("../images/banner_ar_PC.png");
+    width: 100%;
+    height: 545px;
+    padding: 335px 0 0 75px;
+
+
+}
+
+/*adaptive*/
+/*smaller pc*/
+ @media screen and (max-width: 1433px) {
+    #vbr p{
+        width: 90%;
+        margin: 25px auto;
+        position: static;
+    }
+    #vmaininf{
+        display: none;
+    }
+    #vparagraph{
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 2%;
+    }
+  }
+  @media screen and (max-width: 1400px){
+    .j-TripleBloc{
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  /*tablet*/
+  @media screen and (max-width: 1076px){
+    #vavanblock p{
+        margin: 35px;
+    }
+    .vlonghr{
+        width: 100%;
+    }
+    #vavanbigblock .vphoto{
+        display: none;
+    }
+    #vactsec, #vactprinc{
+        margin: 0;
+    }
+    .viconinfim{
+        margin-left: 0;
+    }
+
+    .header__burger-btn {
+        display: block;
+        left: 95%;
+        top: 35%;
+    }
+    #vmainmenu ul{
+        flex-direction: column;
+    }
+    #vmainmenu{
+        width: 0;
+        align-self: start;
+        width: 100%;
+    }
+    .header.open #vmenu {
+        transform: translateX(100%);
+    }
+    #vmenu{
+        flex-direction: column;
+        position: absolute;
+        left: -245px;
+        top: 10px;
+        width: 245px;
+        background-color: #587158;
+        padding: 20px 20px 10px 20px;
+        transition: transform .5s;
+        z-index: 1;
+    }
+    #vmainmenu ul li{
+        margin-bottom: 10px;
+    }
+    .vmain{
+        width:100%;
+    }
+    #vcontact{
+        display: none;
+    }
+    .vtitre{
+        margin-left: 25px;
+    }
+    #vincl, #vnonincl{
+        height: 335px;
+    }
+    #vprogrdet{
+        flex-direction: column;
+
+    }
+    #vprogbig{
+        width: 100%;
+        border: none;
+        padding-top: 40px;
+    }
+    #vjours{
+        margin: 30px auto 0 auto;
+    }
+    #vtarif #vlonghrtarif{
+        width: 100%;
+    }
+    #vgalphot {
+        flex-direction: column;
+        margin: 35px auto;
+    }
+    #vbuttass{
+        display: none;
+    }
+    #vlonghrprog{
+        width: 100%;
+    }
+
+  }
+  /*adaptive pour le portable*/
+
+@media screen and (max-width: 430px) {
+    body{
+        background: none;
+    }
+    .header__burger-btn {
+        display: block;
+        top: -4px;
+    }
+    #vmainmenu ul{
+        flex-direction: column;
+    }
+    #vbanner {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 21.8%, rgba(0, 0, 0, 0.474) 83.71%), url(../images/vbanmob.png);
+        width: 100%;
+        height: 250px;
+        padding: 0 25px;
+    }
+    #vmainmenu{
+        width: 0;
+        align-self: start;
+        width: 100%;
+    }
+    .header.open #vmenu {
+        transform: translateX(100%);
+    }
+    #vbuttass{
+        display: none;
+    }
+    #vmenu{
+        flex-direction: column;
+        position: absolute;
+        left: -245px;
+        top: 10px;
+        width: 245px;
+        background-color: #587158;
+        padding: 20px 20px 10px 20px;
+        transition: transform .5s;
+        z-index: 1;
+    }
+    #vmainmenu ul li{
+        margin-bottom: 10px;
+    }
+	.vmain{
+		width:100%;
+	}
+    #vlogo, #vcontact{
+        display: none;
+    }
+    header{
+        height: 50px;
+        border-bottom: 2px solid white;
+        background-color: transparent;
+        padding: 10px 25px;
+    }
+    #vlogomob {
+        display: inherit;
+        position: absolute;
+        top: 15px;
+        left: 5%
+    }
+    #vlogomob img{
+        width: 50px;
+    }
+    #vparagraph{
+        margin: 0;
+        flex-direction: column;
+        height: 400px;
+        background: #DCD9AB;
+        position: relative;
+        z-index: -1;
+    }
+	.vday{
+		margin:0;
+		padding-right:15px;
+	}
+	#vactprinc{
+		margin-bottom:25px;
+	}
+	#vactprinc h2, #vactsec h3, #vactsec h2{
+		margin-left:0;
+	}
+	#viconinf{
+		justify-content:center;
+		margin-left:0;
+	}
+	#vniv{
+		margin-top:20px;
+	}
+	#vniv img{
+		margin-top:15px;
+	}
+	#vactsec{
+		width: 80%;
+		margin: 25px auto;
+	}
+	#vactsecmob{
+		justify-content:space-evenly;
+	}
+	.viconinfim{
+		margin-left:0;
+	}
+    #vbr p{
+        position: static;
+        width: 100%;
+        padding: 25px;
+        margin-bottom: 45px;
+        text-indent: 30px;
+        margin-top: 0;
+    }
+    #vavant,#vpresentbig, #vpresent, #vprogrdet, #vgalerie, #vtarif{
+        margin: 0;
+        padding: 0;
+    }
+    #vinfgen h1{
+        display: inherit;
+        position: absolute;
+        font-weight: 700;
+        font-size: 25px;
+        text-transform: uppercase;
+        color: #587158;
+        position: absolute;
+        top: -4%
+    }
+    #vinfgen{
+        position: relative;
+        margin-bottom: 25px;
+    }
+    #vinfgen .petithr{
+       display: none;
+       
+    }
+    #vmobdiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .vlonghr, #vlonghrtarif, #vlonghrprog {
+
+        width: 100%;
+        left: 0;
+    }
+    #vprogrdet{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    #vph1{
+        display: none;
+    }
+    .vtitre{
+        font-size: 25px;
+        line-height: 30px;
+        margin-left: 25px;
+    }
+    #vbanner{
+        padding: 178px 88px 25px 25px;
+    }
+    #vpresent{
+        height: 700px;
+    }
+    #vbanner h1, #anbanner h1{
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 700;
+        font-size: 20px;
+        width: 60%;
+    }
+    #vbigivl{
+        flex-direction: column;
+    }
+    #vincl, #vnonincl{
+        width: 100%;
+        padding: 25px 0 0 0;
+    }
+    #vincl{
+        margin-top: 20px;
+    }
+    #vincltext, #vnonicltext{
+        margin: 50px 25px
+    }
+    #vprogbig{
+        width: 100%;
+        border: none;
+        padding-top: 40px;
+    }
+    #vfootmobdiv{
+        display: inline;
+    }
+    #vjours{
+        margin: 30px auto 0 auto;
+    }
+    .vspd{
+        display: inline;
+    }
+    .vspdelet{
+        display: none;
+    }
+    .viconav h2{
+        font-size: 18px;
+        text-align: initial; 
+    }
+    .viconav {
+        margin: 35px auto 0 25px;
+    }
+    #vavanblock p, #vprogbig > p{
+        display: none;
+    }
+    #vdure h2, #vactprinc h2, #vactsec h3, #vactsec h2{
+        text-align: center;
+    }
+    #vactprinc{
+        align-items: center;
+        margin: 0;
+    }
+    #viconinf h3, #vactsec h3 {
+        display: none;
+    }
+    .viconav img {
+        margin-left: 0;
+    }
+    #vpresentbig > p, #vgalerie > p {
+        display: none;
+    }
+    #vdure {
+        margin-top: 25px;
+        height: auto;
+        padding: 0;
+        margin-bottom: 25px;
+        border-right:none
+    }
+    .vday h3{
+        font-size: 16px;
+        margin: 0 0 0 5px;
+    }
+    .vphotolight img{
+        width: 100%;
+    }
+    .vphotolight{
+        width: 100%;
+    }
+    .vphoto img{
+        width: 100%;
+    }
+    .vphotolight{
+        width: 100%;
+    }
+
+    footer{
+        height: 265px;
+        margin-top: 25px;
+        position: relative;
+    }
+    #vflog
+    {
+        display: none;
+    }
+    #vavanblock {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    #vactsecmob{
+        display: flex;
+    }
+    #vdure h2{
+        margin-left: 0;
+    }
+    .vday {
+        margin-top: 15px;
+    }
+    #vgalphot{
+        flex-direction: column;
+        margin:  35px auto;
+    }
+	
+	#vfooterblock, #vfooterblock nav ul{
+		flex-direction:column;
+        width: 100%;
+	}
+	footer nav{
+		width:100%;
+	}
+	#vfooterblock nav ul li{
+		width: 100%;
+		text-align: center;
+        padding: 10px;
+	}
+	.vlineFooter{
+		border-bottom:3px solid white;
+        border-right: none;
+	}
+    .vbrouge{
+        width: 380px;
+        margin: 0 auto;
+    }
+    #vcopy{
+        position: absolute;
+        top: 85%;
+    }
+    #vfooterblock{
+        display: inherit;
+    }
+     #vmainmenu ul li a
+      {
+        border-bottom: 2px solid white;
+    }
+    .swiper-slide, .item_slide {
+        width: 100%;
+    }
+    /*angelica*/
+    #anbanner {
+        height: 250px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 21.8%, rgba(0, 0, 0, 0.474) 83.71%), url(../images/1-bannermob.png);
+        width: 100%;
+        padding: 0 25px;
+
+    }
+    #anbanner h1{
+        top: 170px;
+    }
+    #anpar p{
+        position: relative;
+        top: 0;
+        width: 100%;
+        left: 0;
+        height: 235px;
+        padding: 35px 25px;
+    }
+    #heberg{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #an3div{
+        flex-direction: column;
+        align-items: center;
+    }
+    #anlistvert, .anlist{
+        border: none;
+    }
+    #anlocdiv{
+        flex-direction: column;
+    }
+    #ancarte img{
+        width: 100%;
+    }
+    #anlocdiv .vphoto{
+        width: 100%;
+    }
+    #anlocdiv .vphoto p{
+        width: 345px;
+        margin: 20px auto;
+        font-size: 15px;
+    }
+    #anlocdiv .vphoto h3{
+        font-size: 16px;
+    }
+    #anlocdiv .vphoto img{
+        object-fit: cover;
+    }
+    #anlocdiv .vphoto .vhrmoy{
+        top: 290px;
+    }
+    #ancarte{
+        margin-bottom: 30px;
+    }
+    #anlocal .vbrouge{
+        width: 100%;
+    }
+    /*justine*/
+    #j-IllustrationBanniere{
+        height: 250px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 21.8%, rgba(0, 0, 0, 0.474) 83.71%), url(../images/banmob.png);
+    }
+    #j-TexteBanniere h1{
+        top: 200px;
+        left: 25px;
+        font-size: 20px;
+    }
+    #j-RubriquesALaUne > p, #j-TexteBanniere > p{
+        display: none;
+    }
+    #j-RubriquesALaUne, #j-DecouvrirSK{
+        margin: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .j-TripleBloc{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bouton_catalogue {
+        width: 380px;
+        margin-left: 25px;
+    }
+    #j-IllustrationSK > p{
+        display: none;
+    }
+    #jpsup{
+        display: none;
+    }
+    #j-IllustrationSK, #j-RubriqueDesc, #j-RubriqueAvis{
+        height: auto;
+    }
+    #j-RubriqueAvis{
+        display: none;
+    }
+    #jbutsav{
+        width: 200px;
+        height: 50px;
+        background: #E49F82;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    #jbutsav > a{
+        color: white;
+        text-decoration: none;
+    }
+    #j-RubriqueDesc p{
+        text-align: center;
+    }
+    /*stefan*/
+    #Sbanner {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 21.8%, rgba(0, 0, 0, 0.474) 83.71%), url(../images/Montagne_MO.png);
+        width: 100%;
+        height: 250px;
+        padding: 0 25px;
+    }
+    #Sbr p{
+        position: static;
+        width: 100%;
+        padding: 25px;
+        margin-bottom: 45px;
+        text-indent: 30px;
+        margin-top: 0;
+    }
+    .arArticle1,.arArticle2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    br{
+        display: none;
+    }
+
+
+    /*Armel*/
+
+    .arLien {
+        pointer-events: auto;
+    }
+
+    .arArticle {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .arTitre {
+        width: 100%;
+        height: 48px;
+        margin-top: 20px;
+    }
+
+    .arTitreTexte {
+        height: 27px;
+        font-size: 25px;
+    }
+    
+    .arTitreTexte:before {
+        content: "";
+        position: absolute;
+        left: -25px;
+        bottom: -21px;
+        width: 100%;
+        height: 30px;
+        background-color: #DCD9AB;
+        z-index: -1;
+    }
+    .Stef{
+        display: none;
+    }
+
+    .arBlocImage {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .arBlocImage1{
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .arBlocImage2{
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .arImage_mob {
+        display: unset;
+        width: 100%;
+        height: 250px;
+    }
+    
+    .arImage_PC {
+        display: none;
+    }
+
+    .arBouton1, .arBouton2 {/*Améliorer pour coresondre a ma page (Stéfan)*/
+        display: none;
+    }
+    
+    .arBlocTexte1,.arBlocTexte2 {/*Améliorer pour coresondre a ma page (Stéfan)*/
+        height: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .arBlocTexte{
+        height: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .arSousTitre {
+        height: auto;
+        width: 100%;
+        
+    }
+    
+    .arSousTitreTexte1,.arSousTitreTexte2 {/*Améliorer pour coresondre a ma page (Stéfan)*/
+        font-size: 20px;
+        width: auto;
+        margin: 15px auto 15px 25px;
+    }
+    
+    .arSousTitreTrait1,.arSousTitreTrait2 {
+        width: 100px;
+        margin-left: 0px;
+        margin-top: -30px;
+    }
+
+    .arSousTexte_mob1 {/*Améliorer pour coresondre a ma page (Stéfan)*/
+        width: 226px;
+        height: 34px;
+        display: unset;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: -15px 37px 33px 37px;
+    }
+    .arSousTexte_mob2 {/*Améliorer pour coresondre a ma page (Stéfan)*/
+        width: 226px;
+        height: 34px;
+        display: unset;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #587158;
+        margin: -15px 37px 33px 37px;
+    }
+    #arbr p{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 405px;
+        background: #E49F82;
+        font-style: italic;
+        font-size: 20px;
+        text-align: justify;
+        color: #FFFFFF;
+        padding: 45px 35px;
+    }
+
+    .arSousTexte_PC1,.arSousTexte_PC2 {/*Améliorer pour coresondre a ma page (Stéfan)*/
+        display: none;
+    }
+
+    .arSousTexte_mob {
+        width: 226px;
+        display: unset;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin: -15px 37px 33px 37px;
+    }
+
+    .arSousTexte_PC{
+        display: none;
+    }
+
+    .arBouton{
+        display: none;
+    }
+    #Sbanner h1{
+        top: 110px;
+    }
+
+
+}
+
+  
+
+
